@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 import os
 import traceback
-
-bot = commands.Bot(command_prefix="/")
 client = discord.Client()
 
 t = ""
@@ -12,13 +10,6 @@ a = 0
 
 token = os.environ['DISCORD_BOT_TOKEN']
 
-if not discord.opus.is_loaded():
-    discord.opus.load_opus("heroku-buildpack-libopus")
-
-@bot.commands()
-async def abe(ctx):
-    await ctx.send("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Shinz%C5%8D_Abe_Official.jpg/240px-Shinz%C5%8D_Abe_Official.jpg")
-    
 @client.event
 async def on_ready():
     print("Logged in as")
@@ -83,6 +74,10 @@ async def on_message(message):
     if ("!p www" in message.content):
         if client.user != message.author:
             await message.channel.send("いいね！")
+      
+    if message.content.startwith("abe"):
+        if client.user != message.author:
+            await message.content.send("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Shinz%C5%8D_Abe_Official.jpg/240px-Shinz%C5%8D_Abe_Official.jpg")
             
 
     
