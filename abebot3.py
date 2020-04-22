@@ -1,4 +1,6 @@
 import discord
+import os
+import traceback
 client = discord.Client()
 t = ""
 b = 0
