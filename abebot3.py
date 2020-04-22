@@ -75,7 +75,7 @@ async def on_message(message):
         if client.user != message.author:
             await message.channel.send("いいね！")
       
-    if message.content.startwith("abe"):
+    if message.content.startswith("abe"):
         if client.user != message.author:
             await message.channel.send("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Shinz%C5%8D_Abe_Official.jpg/240px-Shinz%C5%8D_Abe_Official.jpg")
             
