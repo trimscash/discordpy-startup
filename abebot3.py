@@ -1,6 +1,6 @@
 import random
 import discord
-
+import os
 
 t = ""
 b = 0
