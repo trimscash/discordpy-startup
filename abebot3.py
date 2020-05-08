@@ -31,7 +31,7 @@ async def on_message(message):
             mm="マスク二枚くれてやるよ！"
             await message.channel.send(mm)
 
-    if or("草"in message.content) or\
+    if ("草"in message.content) or\
        ("ワロタ"in message.content):
         if client.user != message.author:
             m="草"
