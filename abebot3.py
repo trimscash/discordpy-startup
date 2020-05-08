@@ -41,7 +41,6 @@ async def on_message(message):
        ("安倍"in message.content)and ("やろ"in message.content) :
         if client.user != message.author:
             await message.channel.send("やりたければ国会議事堂にこい")
-            continue
 
     if ("昭恵" in message.content):
         if client.user != message.author:
