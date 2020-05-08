@@ -2,6 +2,7 @@ import random
 import discord
 import os
 
+client = discord.Client()
 t = ""
 b = 0
 a = 0
