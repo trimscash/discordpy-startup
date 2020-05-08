@@ -75,8 +75,8 @@ async def on_message(message):
            
     if ("!p " in message.content):
         if client.user != message.author:
-			if random.randint(0,13) == 0:
-				await message.channel.send("いいね！")
+            if random.randint(0,13) == 0:
+                await message.channel.send("いいね！")
       
     if message.content.startswith("abe"):
         if client.user != message.author:
