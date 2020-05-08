@@ -73,7 +73,7 @@ async def on_message(message):
                                        "国民の皆様のご協力をお願いします。")
             
            
-    if ("!p www" in message.content):
+    if ("!p " in message.content):
         if client.user != message.author:
              if random.randint(0,13) == 0:
                 await message.channel.send("いいね！")
