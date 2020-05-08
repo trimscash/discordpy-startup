@@ -6,6 +6,7 @@ t = ""
 b = 0
 a = 0
 c = 0
+d = 0
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @client.event
@@ -28,10 +29,11 @@ async def on_message(message):
             mm="マスク二枚くれてやるよ！"
             await message.channel.send(mm)
 
-    if ("草"in message.content) or ("ｗ"in message.content)or\
-       ("ワロタ"in message.content)or ("kusa" in message.content):
+    if ("草"in message.content)or("ｗ"in message.content)or\
+       ("ワロタ"in message.content)or("kusa" in message.content):
         if client.user != message.author:
-            if random.randint(0,3) == 0:
+            d = random.randint(0,3)
+            if d == 0:
                 m="草"
                 await message.channel.send(m)
             
