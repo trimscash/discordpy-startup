@@ -8,7 +8,7 @@ client = discord.Client()
 t = ""
 b = 0
 a = 0
-c = 
+c = 0
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @client.event
