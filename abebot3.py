@@ -32,9 +32,9 @@ async def on_message(message):
             await message.channel.send(mm)
 
     if ("草"in message.content) or ("ｗ"in message.content)\
-       ("ワロタ"in message.content):
+       ("ワロタ"in message.content)or ("kusa" in message.content):
         if client.user != message.author:
-            if random.randint(0,3):
+            if random.randint(0,3) == 0:
                 m="草"
                 await message.channel.send(m)
             
