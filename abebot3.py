@@ -8,7 +8,7 @@ client = discord.Client()
 t = ""
 b = 0
 a = 0
-
+c = 
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @client.event
@@ -31,11 +31,12 @@ async def on_message(message):
             mm="マスク二枚くれてやるよ！"
             await message.channel.send(mm)
 
-    if ("草"in message.content) or\
+    if ("草"in message.content) or ("ｗ"in message.content)\
        ("ワロタ"in message.content):
         if client.user != message.author:
-            m="草"
-            await message.channel.send(m)
+            if random.randint(0,3):
+                m="草"
+                await message.channel.send(m)
             
     if ("安倍トランプ" in message.content)or\
        ("安倍"in message.content)and ("やろ"in message.content) :
@@ -54,10 +55,13 @@ async def on_message(message):
         if client.user != message.author:
             await message.channel.send("はーい")
 
-    if ("ヤれ" in message.content):
+    if ("ヤレ" in message.content):
         if client.user != message.author:
-            await message.channel.send("はい。昭恵～")
-
+            c = random.randint(0,1)
+            if c == 0:
+                await message.channel.send("はい。昭恵～")
+            else:
+                await message.channel.send("ああ...良い")
 #    if ("abeskip " in message.content):
  #       if client.user != message.author:
   #          music6 = message.content.lstrip("abeskip")
