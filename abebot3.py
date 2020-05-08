@@ -1,9 +1,6 @@
 import random
 import discord
-from discord.ext import commands
-import os
-import traceback
-client = discord.Client()
+
 
 t = ""
 b = 0
@@ -31,7 +28,7 @@ async def on_message(message):
             mm="マスク二枚くれてやるよ！"
             await message.channel.send(mm)
 
-    if ("草"in message.content) or ("ｗ"in message.content)\
+    if ("草"in message.content) or ("ｗ"in message.content)or\
        ("ワロタ"in message.content)or ("kusa" in message.content):
         if client.user != message.author:
             if random.randint(0,3) == 0:
