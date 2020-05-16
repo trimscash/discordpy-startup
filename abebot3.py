@@ -50,6 +50,7 @@ async def on_message(message):
             await message.channel.send("はい?")
             while time1 <= time2 + 10:
                 time1 = time.time()
+                async def on_message(message):
                 if ("よろ" in message.content):
                     await message.channel.send("よろしく")
                     break
