@@ -56,7 +56,7 @@ async def on_message(message):
                         break
             await message.channel.send("なんだったんだ？")
 
-    if ("ヤレ" in message.content):
+    if ("ヤレ" in message.content): 
         if client.user != message.author:
             c = random.randint(0,1)
             if c == 0:
