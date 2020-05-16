@@ -19,7 +19,7 @@ async def on_ready():
     print("------")
 
 @client.event
-async def on_message(message):
+async def on_message(message,message1):
 
     if ("マスク" in message.content)or("コロナ" in message.content):
         if client.user != message.author:
@@ -50,10 +50,9 @@ async def on_message(message):
             await message.channel.send("はい?")
             while time1 <= time2 + 10:
                 time1 = time.time()
-                def on_message(message1):
-                    if ("よろ" in message1.content):
-                        await message.channel.send("よろしく")
-                        break
+                if ("よろ" in message1.content):
+                    await message.channel.send("よろしく")
+                    break
             await message.channel.send("なんだったんだ？")
 
     if ("ヤレ" in message.content): 
