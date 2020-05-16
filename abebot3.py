@@ -51,7 +51,7 @@ async def on_message(message):
                 if ("よろ" in message.content):
                     await message.channel.send("よろしく")
                     break
-            await message.content.send("なんだったんだ？")
+            await message.channel.send("なんだったんだ？")
 
     if ("ヤレ" in message.content):
         if client.user != message.author:
