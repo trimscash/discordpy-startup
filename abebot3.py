@@ -45,7 +45,7 @@ async def on_message(message):
 
     if ("安倍" in message.content):
         if client.user != message.author:
-            message.channel.send("はい?")
+            await message.channel.send("はい?")
             for itimea in range(3):
                 time.sleep(1)
                 if ("よろ" in message.content):
