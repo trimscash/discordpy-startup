@@ -46,8 +46,9 @@ async def on_message(message):
     if ("安倍" in message.content):
         if client.user != message.author:
             time1 = time.time()
+            time2 = time.time()
             await message.channel.send("はい?")
-            while time1 <= time1 + 10:
+            while time1 <= time2 + 10:
                 time1 = time.time()
                 if ("よろ" in message.content):
                     await message.channel.send("よろしく")
