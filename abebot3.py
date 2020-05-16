@@ -1,5 +1,6 @@
 import random
 import discord
+import time
 import os
 
 client = discord.Client()
@@ -19,11 +20,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if ("よろ" in message.content):
-        if client.user != message.author:
-            my="よろぴくついでに投票よろ"
-            await message.channel.send(my)
-            
 
     if ("マスク" in message.content)or("コロナ" in message.content):
         if client.user != message.author:
@@ -37,11 +33,7 @@ async def on_message(message):
             if d == 0:
                 m="草"
                 await message.channel.send(m)
-            
-    if ("安倍トランプ" in message.content)or\
-       ("安倍"in message.content)and ("やろ"in message.content) :
-        if client.user != message.author:
-            await message.channel.send("やりたければ国会議事堂にこい")
+
 
     if ("昭恵" in message.content):
         if client.user != message.author:
@@ -53,7 +45,13 @@ async def on_message(message):
 
     if ("安倍" in message.content):
         if client.user != message.author:
-            await message.channel.send("はーい")
+            message.channel.send("はい?")
+            for itimea in range(3):
+                time.sleep(1)
+                if ("よろ" in message.content):
+                    await message.channel.send("よろしく")
+                    break
+            await message.content.send("なんだったんだ？")
 
     if ("ヤレ" in message.content):
         if client.user != message.author:
