@@ -19,7 +19,7 @@ async def on_ready():
     print("------")
 
 @client.event
-async def on_message(message,message1):
+async def on_message(message):
 
     if ("マスク" in message.content)or("コロナ" in message.content):
         if client.user != message.author:
@@ -43,17 +43,16 @@ async def on_message(message,message1):
         if client.user != message.author:
             await message.channel.send("あ///♂♂♂")
 
-    if ("安倍" in message.content):
-        if client.user != message.author:
-            time1 = time.time()
-            time2 = time.time()
-            await message.channel.send("はい?")
-            while time1 <= time2 + 10:
-                time1 = time.time()
-                if ("よろ" in message1.content):
-                    await message.channel.send("よろしく")
-                    break
-            await message.channel.send("なんだったんだ？")
+ #if client.user != message.author:
+  #          time1 = time.time()
+   #         time2 = time.time()
+    #        await message.channel.send("はい?")
+     #       while time1 <= time2 + 10:
+      #          time1 = time.time()
+       #         if ("よろ" in message.content):
+        #            await message.channel.send("よろしく")
+         #           break
+          #  await message.channel.send("なんだったんだ？")
 
     if ("ヤレ" in message.content): 
         if client.user != message.author:
