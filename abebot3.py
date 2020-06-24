@@ -33,7 +33,14 @@ async def on_message(message):
             if d == 0:
                 m="草"
                 await message.channel.send(m)
-
+                
+    if ("こんにちは"in message.content)or("おはよう"in message.content)or\
+       ("うんち"in message.content)or("乙" in message.content):
+        if client.user != message.author:
+            d = random.randint(0,3)
+            if d == 0:
+                m= message.content
+                await message.channel.send(m,"ｗ")
 
     if ("昭恵" in message.content):
         if client.user != message.author:
@@ -43,17 +50,6 @@ async def on_message(message):
         if client.user != message.author:
             await message.channel.send("あ///♂♂♂")
 
- #if client.user != message.author:
-  #          time1 = time.time()
-   #         time2 = time.time()
-    #        await message.channel.send("はい?")
-     #       while time1 <= time2 + 10:
-      #          time1 = time.time()
-       #         if ("よろ" in message.content):
-        #            await message.channel.send("よろしく")
-         #           break
-          #  await message.channel.send("なんだったんだ？")
-
     if ("ヤレ" in message.content): 
         if client.user != message.author:
             c = random.randint(0,1)
@@ -61,10 +57,14 @@ async def on_message(message):
                 await message.channel.send("はい。昭恵～")
             else:
                 await message.channel.send("ああ...良い")
-#    if ("abeskip " in message.content):
- #       if client.user != message.author:
-  #          music6 = message.content.lstrip("abeskip")
-   #         await message.channel.send("!playskip"+ music6)
+    if ("化学" in message.content)or("物理" in message.content)and("教えて"in message.content):
+        if client.user != message.author:
+            if ("化学"in message.content):
+                mam = "化学"
+                await message.channel.send(mam,"できない")
+            elif ("物理"in message.content):
+                mam = "物理"
+                await message.channel.send(mam,"できない")
 
 
     if ("緊急事態宣言　"in message.content):
