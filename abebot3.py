@@ -57,7 +57,7 @@ async def on_message(message):
                 await message.channel.send("はい。昭恵～")
             else:
                 await message.channel.send("ああ...良い")
-    if ("化学" in message.content)or("物理" in message.content)and("教えて"in message.content):
+    if ("教えて"in message.content):
         if client.user != message.author:
             if ("化学"in message.content):
                 mam = "化学"
