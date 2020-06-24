@@ -40,7 +40,7 @@ async def on_message(message):
             d = random.randint(0,3)
             if d == 0:
                 m= message.content
-                await message.channel.send(m,"ｗ")
+                await message.channel.send(m+"ｗ")
 
     if ("昭恵" in message.content):
         if client.user != message.author:
@@ -61,10 +61,10 @@ async def on_message(message):
         if client.user != message.author:
             if ("化学"in message.content):
                 mam = "化学"
-                await message.channel.send(mam,"できない")
+                await message.channel.send(mam +"できない")
             elif ("物理"in message.content):
                 mam = "物理"
-                await message.channel.send(mam,"できない")
+                await message.channel.send(mam +"できない")
 
 
     if ("緊急事態宣言　"in message.content):
