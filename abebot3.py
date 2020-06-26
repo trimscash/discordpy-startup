@@ -65,6 +65,9 @@ async def on_message(message):
             elif ("物理"in message.content):
                 mam = "物理"
                 await message.channel.send(mam +"できない")
+            elif ("国語"in message.content):
+                mam = "国語"
+                await message.channel.send("俺"+mam +"できる国会議事堂こい")    
 
 
     if ("緊急事態宣言　"in message.content):
