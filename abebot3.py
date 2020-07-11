@@ -9,6 +9,7 @@ b = 0
 a = 0
 c = 0
 d = 0
+dd=0
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @client.event
@@ -35,8 +36,8 @@ async def on_message(message):
                 
     if ("こんにちは"in message.content)or("おはよう"in message.content)or("うんち"in message.content)or("乙" in message.content):
         if client.user != message.author:
-            d = random.randint(0,3)
-            if d == 0:
+            dd = random.randint(0,3)
+            if dd == 0:
                 m= message.content
                 await message.channel.send(m+"ｗ")
 
