@@ -26,16 +26,14 @@ async def on_message(message):
             mm="マスク二枚くれてやるよ！"
             await message.channel.send(mm)
 
-    if ("草"in message.content)or("ｗ"in message.content)or\
-       ("ワロタ"in message.content)or("kusa" in message.content):
+    if ("草"in message.content)or("ｗ"in message.content)or("ワロタ"in message.content)or("kusa" in message.content):
         if client.user != message.author:
             d = random.randint(0,3)
             if d == 0:
                 m="草"
                 await message.channel.send(m)
                 
-    if ("こんにちは"in message.content)or("おはよう"in message.content)or\
-       ("うんち"in message.content)or("乙" in message.content):
+    if ("こんにちは"in message.content)or("おはよう"in message.content)or("うんち"in message.content)or("乙" in message.content):
         if client.user != message.author:
             d = random.randint(0,3)
             if d == 0:
