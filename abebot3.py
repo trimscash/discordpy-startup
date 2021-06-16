@@ -56,34 +56,9 @@ async def on_message(message):
                 await message.channel.send("はい。昭恵～")
             else:
                 await message.channel.send("ああ...良い")
-    if ("教えて"in message.content):
-        if client.user != message.author:
-            if ("化学"in message.content):
-                mam = "化学"
-                await message.channel.send(mam +"できない")
-            elif ("物理"in message.content):
-                mam = "物理"
-                await message.channel.send(mam +"できない")
-            elif ("国語"in message.content):
-                mam = "国語"
-                await message.channel.send("俺"+mam +"できる国会議事堂こい")    
+   
+ 
 
-
-    if ("緊急事態宣言　"in message.content):
-        if client.user != message.author:
-            global t
-            t = message.content.lstrip("緊急事態宣言　")
-            await message.channel.send("緊急事態宣言を発令しました。"+ t +
-                                       "の言葉を発することを控えてください。"
-                                       "国民の皆様のご協力をお願いします。")
-            
-           
-    if ("!p " in message.content):
-        if client.user != message.author:
-            b = random.randint(0,13)
-            if b == 0:
-                await message.channel.send("いいね！")
-      
     if message.content.startswith("abe"):
         if client.user != message.author:
             a = random.randint(0,2)
